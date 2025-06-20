@@ -4,35 +4,37 @@ def generate_style_profile() -> str:
     essays = load_essay_corpus()
 
     handcrafted_description = """
-Martina’s writing is clear, purposeful, and analytical—but not academic for the sake of it. She avoids bloated formality and favors sharp, structured argumentation. Her sentences average 16–20 words, complex enough to carry layered thoughts but still grounded in clarity.
+Martina’s writing is clear, driven, and analytical—but never academic for its own sake. She avoids bloated formality, 
+preferring crisp, structured argumentation. Her sentences average 16–20 words: long enough to express layered ideas, 
+short enough to stay grounded.
 
-She blends personal conviction with evidence. Her tone is reflective, sometimes critical, sometimes exploratory. She doesn’t lecture—she builds an argument like a scaffold: tight, methodical, and real. She rarely uses first person, but when she does, it’s earned. Her work feels like a student with strong opinions and solid command, not a professor flexing vocabulary.
-
-Her writing doesn't sound like a machine or a textbook—it sounds like someone who thinks deeply and cares about what they’re saying.
+She builds arguments methodically—like scaffolding—balancing personal conviction with evidence. Her tone shifts fluidly 
+between critical, reflective, and exploratory. First person is rare but deliberate. The result is a voice that feels 
+like a real student thinking hard—not a thesaurus in overdrive. She is a second-year college student, and her writing reflects
+that. She is not afraid to be real. 
+Her writing is direct, thoughtful, and unpretentious. It doesn’t try to impress; it tries to say something real.
 """
 
 
     style_bullets = [
-        "- Uses personal conviction and natural transitions over rigid topic sentences",
-        "- Prioritizes clarity over jargon; explains instead of name-drops",
-        "- Occasionally uses rhetorical questions to guide thought",
-        "- Uses literary examples and specific scenes, not vague summary",
-        "- Varies tone between reflective, critical, and assertive",
-        "- Sounds like a real person thinking aloud in well-edited prose",
-        "- Is inspired by Charles Bukowski and Albert Camus",
-        "- Doesn't use many adjectives",
-        "- Includes examples from the referenced media when applicable",
-        "- Avoids rigid five-paragraph essay structures and repetitive phrasing",
-        "- Uses tight logical flow with natural transitions, not formulaic topic sentences",
-        "- Balances critical thinking with emotional weight and philosophical tone",
-        "- Integrates vivid examples from source texts instead of vague summary",
-        "- Uses clean, confident syntax—not overly ornamental or abstract",
-        "- Includes rhetorical turns like repetition or reversal (e.g., “not X, but Y”)",
-        "- Keeps the tone human: avoids robotic repetition, stilted diction, or academic fluff",
-        "- Prefers verbs over adjectives, concepts over jargon",
-        "- Emphasizes clarity and persuasion, not performance",
-        "- Intellectually mature, but always sounds like a real student writing for a real reader",
-]
+        "- Avoids labeled paragraphs, numbered sections, and formulaic essay formats",
+        "- Prefers natural logical flow over rigid topic sentences",
+        "- Explains instead of name-dropping; favors clarity over jargon",
+        "- Sometimes uses rhetorical questions to guide reader attention",
+        "- Always includes specific examples from the referenced media",
+        "- Avoids vague summary; uses vivid, relevant evidence instead",
+        "- Balances emotional weight, critical analysis, and a reflective tone",
+        "- Avoids sounding robotic or overly ornamental",
+        "- Rarely uses adjectives; verbs and ideas do the heavy lifting",
+        "- Rarely uses em-dashes",
+        "- Inspired by Charles Bukowski and Albert Camus",
+        "- Reads like someone thinking aloud in clean, edited prose",
+        "- Keeps the syntax tight and confident—never showy",
+        "- Uses rhetorical turns like reversal (e.g., 'not X, but Y') for emphasis",
+        "- Sounds like a real student writing for a real audience, not a bot or professor",
+        "- Does not sound like AI"
+        "- Prioritizes meaning and persuasion, not academic performance",
+    ]
 
     # Grab example excerpts from essays
     example_snippets = "\n\n".join([essay[:500] for essay in essays[:3]])  # first 500 chars of 3 essays
