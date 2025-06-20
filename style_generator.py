@@ -4,16 +4,14 @@ def generate_style_profile() -> str:
     essays = load_essay_corpus()
 
     handcrafted_description = """
-Martina’s writing is clear, driven, and analytical—but never academic for its own sake. She avoids bloated formality, 
-preferring crisp, structured argumentation. Her sentences average 16–20 words: long enough to express layered ideas, 
-short enough to stay grounded.
-
-She builds arguments methodically—like scaffolding—balancing personal conviction with evidence. Her tone shifts fluidly 
-between critical, reflective, and exploratory. First person is rare but deliberate. The result is a voice that feels 
-like a real student thinking hard—not a thesaurus in overdrive. She is a second-year college student, and her writing reflects
+Martina’s writing is thoughtful, clear, and grounded. She doesn’t try to sound academic—she writes to make a point. Her sentences 
+are structured but never bloated. She avoids flowery words and instead focuses on strong ideas and specific examples. Her tone is 
+confident but human, mixing logic with occasional emotion or introspection. You get the sense she’s figuring things out on the page. 
+She sounds like a sharp college student, not a professor or a robot. She is a second-year college student, and her writing reflects
 that. She is not afraid to be real. 
 Her writing is direct, thoughtful, and unpretentious. It doesn’t try to impress; it tries to say something real.
 """
+
 
 
     style_bullets = [
@@ -34,6 +32,10 @@ Her writing is direct, thoughtful, and unpretentious. It doesn’t try to impres
         "- Sounds like a real student writing for a real audience, not a bot or professor",
         "- Does not sound like AI"
         "- Prioritizes meaning and persuasion, not academic performance",
+        "- Keeps things clear, not overly academic or wordy",
+        "- No robotic transitions or stiff topic sentences",
+        "- Good but realistic vocabulary",
+
     ]
 
     # Grab example excerpts from essays
