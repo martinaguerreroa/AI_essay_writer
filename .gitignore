@@ -1,3 +1,6 @@
 .env
+venv/
 __pycache__/
 *.pyc
+AI_essay_writer.git/
+AI_essay_writer.git.bfg-report/
